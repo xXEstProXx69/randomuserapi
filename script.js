@@ -11,7 +11,6 @@ async function getData() {
   const data = await response.json();
 
 
-
 userData = data.results[0];
 
   let gender = userData.gender;
