@@ -2,8 +2,8 @@ let name = document.querySelector("#name");
 let age = document.querySelector("#age");
 let country = document.querySelector("#country");
 let email = document.querySelector("#email");
-let male = document.querySelector("#male");
-let female = document.querySelector("#female");
+let maleradio = document.querySelector("#male");
+let femaleradio = document.querySelector("#female");
 let userData;
 
 async function getData() {
@@ -24,9 +24,9 @@ async function getData() {
   let gender = userData.gender;
 
   if (gender === "female") {
-    female.checked = true;
+    femaleradio.checked = true;
   } else {
-    male.checked = true;
+    maleradio.checked = true;
   }
 
   name.value = userData.name.first + " " + userData.name.last;
